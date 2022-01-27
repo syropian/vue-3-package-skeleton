@@ -4,6 +4,6 @@ export const MyComponent = defineComponent({
   name: 'MyComponent',
   props: {},
   setup() {
-    return () => h('div')
+    return () => h('div', {}, 'hello world')
   },
 })
