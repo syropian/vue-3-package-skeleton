@@ -1,24 +1,22 @@
-# vue-tribute [![Tests](https://github.com/syropian/vue-tribute/actions/workflows/test.yml/badge.svg?branch=next)](https://github.com/syropian/vue-tribute/actions/workflows/test.yml)
+# my-lib [![Tests](https://github.com/syropian/vue-3-package-skeleton/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/syropian/vue-3-package-skeleton/actions/workflows/test.yml)
 
-A tiny Vue.js wrapper around Zurb's Tribute library for ES6 native @mentions.
-
-> 🚦 Looking for Vue 2 support? Check out the [master branch](https://github.com/syropian/vue-tribute).
+A description of your new library.
 
 ## Install
 
 ```bash
-$ npm install vue-tribute@next --save
+$ npm install my-lib --save
 # or...
-$ yarn add vue-tribute@next
+$ yarn add my-lib
 ```
 
 _or_
 
-Use the UMD build from [Unpkg](https://unpkg.com/vue-tribute), available as `VueTribute` in the global scope.
+Use the UMD build from [Unpkg](https://unpkg.com/my-lib), available as `MyLib` in the global scope.
 
 ```html
 <script src="/vendor/vue.js" />
-<script src="https://unpkg.com/vue-tribute@next" />
+<script src="https://unpkg.com/my-lib" />
 ```
 
 ### Globally
@@ -28,18 +26,18 @@ Import and register the module as a plugin.
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueTribute from 'vue-tribute'
+import MyLib from 'my-lib'
 
-createApp(App).use(VueTribute).mount('#app')
+createApp(App).use(MyLib).mount('#app')
 ```
 
 ### Per-component
 
 ```javascript
-import { VueTribute } from 'vue-tribute'
+import { MyLib } from 'my-lib'
 
 export default {
-  components: { VueTribute },
+  components: { MyLib },
   setup() {
     ...
   },
@@ -48,19 +46,7 @@ export default {
 
 ## Usage
 
-Wrap a single **text input**, **textarea**, or **contenteditable** element within the `VueTribute` component. You should then pass a [valid Tribute options object](https://github.com/zurb/tribute#initializing) to the component.
-
-## Events
-
-All [custom Tribute events](https://github.com/zurb/tribute#events) will work as expected. Simply attach listeners for them like you would any other event.
-
-```vue
-<template>
-  <vue-tribute :options="options">
-    <input type="text" placeholder="@..." @tribute-replaced="doSomething" />
-  </vue-tribute>
-</template>
-```
+Usage instructions here.
 
 ## License
 
